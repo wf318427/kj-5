@@ -1,5 +1,0 @@
-server:
-  port: 20000
-spring:
-  application:
-    name: kj-5
