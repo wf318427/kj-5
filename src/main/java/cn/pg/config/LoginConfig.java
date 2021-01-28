@@ -15,7 +15,7 @@ import org.springframework.context.event.EventListener;
  * @date ：Created in 2021/1/27 4:29 下午
  */
 
-@Configuration
+//@Configuration
 @ConditionalOnClass(RequestFacade.class)
 public class LoginConfig implements ApplicationRunner {
 
