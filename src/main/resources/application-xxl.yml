@@ -1,0 +1,15 @@
+
+xxl:
+  job:
+    accessToken:
+    admin:
+      addresses: http://127.0.0.1:8080/xxl-job-admin
+    executor:
+      appname: xxl-job-executor-sample
+      ip: 192.168.78.236
+      port: 8888
+      address:
+      logpath: xxl-log
+      logretentiondays: 30
+logging:
+  path: logs

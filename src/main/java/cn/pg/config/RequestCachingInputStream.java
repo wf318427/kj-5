@@ -1,5 +1,7 @@
 package cn.pg.config;
 
+import org.apache.commons.io.IOUtils;
+
 import javax.servlet.ReadListener;
 import javax.servlet.ServletInputStream;
 import java.io.ByteArrayInputStream;
@@ -34,5 +36,12 @@ public class RequestCachingInputStream extends ServletInputStream {
 
     @Override
     public void setReadListener(ReadListener readlistener) {
+    }
+
+    public static void main(String[] args) throws IOException {
+        byte[] bytes={1,3,5};
+        RequestCachingInputStream stream=new RequestCachingInputStream(bytes);
+        System.out.println(IOUtils.toString(stream.inputStream));
+        System.out.println(bytes);
     }
 }

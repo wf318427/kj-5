@@ -1,8 +1,7 @@
 package cn.pg.service;
 
-
 import cn.pg.dao.EmpDao;
-import lombok.extern.slf4j.Slf4j;
+import cn.pg.entity.Emp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,18 +9,11 @@ import javax.annotation.Resource;
 
 /**
  * @author ：zhangfei
- * @date ：Created in 2021/1/27 3:28 下午
+ * @date ：Created in 2021/2/1 6:47 下午
  */
+
 @Service
-@Slf4j
-public class PersonService {
-
-    private String name;
-
-    public void getPerson(){
-
-        log.info("get Person");
-    }
+public class StudentService {
 
     @Autowired
     private EmpDao empDao;

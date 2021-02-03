@@ -1,0 +1,8 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(»Àšáùÿÿÿÿ8³ä¢•ô.
+P
+java:S1874"3Remove this use of "newInstance"; it is deprecated.(½—ç€8òÂ–—ô.
+Q
+java:S3740"/Provide the parametrized type for this generic.(›Éıüüÿÿÿÿ8òÂ–—ô.
+W
+java:S1128"5Remove this unused import 'java.lang.reflect.Method'.(Í“¯äüÿÿÿÿ8ïÖª–ô.

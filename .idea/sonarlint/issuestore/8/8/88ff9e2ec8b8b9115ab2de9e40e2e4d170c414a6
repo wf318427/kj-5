@@ -1,0 +1,8 @@
+
+W	java:S125)"<This block of commented-out lines of code should be removed.(÷ÙŸ8Ú…Ëßô.
+M
+java:S1481("+Remove this unused "method" local variable.(Ÿ“ÇÇıÿÿÿÿ8Ú…Ëßô.
+W
+java:S1191	"5Use classes from the Java API instead of Sun classes.(¥ñŒÖüÿÿÿÿ8‰î°ßô.
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(œšÛÃıÿÿÿÿ8 €òàô.
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(œšÛÃıÿÿÿÿ8 €òàô.

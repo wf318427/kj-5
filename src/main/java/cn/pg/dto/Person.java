@@ -2,6 +2,7 @@ package cn.pg.dto;
 
 import javassist.*;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.lang.reflect.Method;
 
@@ -11,6 +12,7 @@ import java.lang.reflect.Method;
  */
 
 @Data
+@Accessors(chain = true)
 public class Person {
     private String name;
 
@@ -27,6 +29,8 @@ public class Person {
         Class c = cc.toClass();
         Person h = (Person)c.newInstance();
         h.personFly();
+
+
 
     }
 }

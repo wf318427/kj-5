@@ -3,3 +3,9 @@ server:
 spring:
   application:
     name: kj-5
+  datasource:
+    username: root
+    password: zhangfei
+    url: jdbc:mysql://localhost:3306/test2?Unicode=true&characterEncoding=UTF-8&SSL=false
+  profiles:
+    active: xxl

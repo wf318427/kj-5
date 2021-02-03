@@ -1,9 +1,5 @@
 package cn.pg.test;
 
-import javassist.ClassPool;
-import javassist.CtClass;
-import javassist.CtMethod;
-import javassist.LoaderClassPath;
 
 /**
  * @author ：zhangfei
@@ -11,8 +7,19 @@ import javassist.LoaderClassPath;
  */
 public class Hello {
 
+
     public void say() {
         System.out.println("Hello");
+    }
+
+    public void say1(byte[] bytes) {
+
+        System.out.println(new String(bytes));
+    }
+
+    public void say1(String bytes) {
+
+        System.out.println(new String(bytes));
     }
 }
 

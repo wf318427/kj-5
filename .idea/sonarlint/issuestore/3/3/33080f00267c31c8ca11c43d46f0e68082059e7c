@@ -1,0 +1,17 @@
+
+E
+java:S1068"(Remove this unused "name" private field.(Ë¥¼8µñóô.
+u
+java:S1128	"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8µñóô.
+a
+java:S1128"DRemove this unused import 'javassist.bytecode.AnnotationsAttribute'.(İÚµŸ8šØ™–ô.
+P
+java:S1128".Remove this unused import 'javassist.CtField'.(•ñõæøÿÿÿÿ8šØ™–ô.
+P
+java:S1128".Remove this unused import 'javassist.CtClass'.(ë¤õËûÿÿÿÿ8šØ™–ô.
+j
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonFormat'.(ıÙè‹øÿÿÿÿ8µñóô.
+R
+java:S1128"0Remove this unused import 'javassist.ClassPool'.(‹€Üîøÿÿÿÿ8šØ™–ô.
+Q
+java:S1128"4Remove this unused import 'java.lang.reflect.Field'.(„‡Áú8šØ™–ô.

@@ -1,8 +1,11 @@
 package cn.pg.filter;
 
+import cn.pg.config.ContentCachingRequestWrapper;
+import cn.pg.config.ContentCachingResponseWrapper;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebFilter;
@@ -17,21 +20,19 @@ import java.io.IOException;
 
 @Component
 @WebFilter
+@Slf4j
 public class LoginFilter extends OncePerRequestFilter {
     /**
-     * Same contract as for {@code doFilter}, but guaranteed to be
-     * just invoked once per request within a single request thread.
-     * See {@link #shouldNotFilterAsyncDispatch()} for details.
-     * <p>Provides HttpServletRequest and HttpServletResponse arguments instead of the
-     * default ServletRequest and ServletResponse ones.
      *
      * @param request
      * @param response
      * @param filterChain
      */
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        request.getInputStream().getClass();
-        filterChain.doFilter(request,response);
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws IOException, ServletException {
+        ContentCachingRequestWrapper requestWrapper = new ContentCachingRequestWrapper(request);
+        ContentCachingResponseWrapper responseWrapper=new ContentCachingResponseWrapper(response);
+        filterChain.doFilter(requestWrapper,responseWrapper);
+        logger.info(new String(requestWrapper.getBody()));
     }
 }
